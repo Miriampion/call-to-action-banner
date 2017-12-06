@@ -14,14 +14,17 @@ body {
 h2 {
   font-size: 3rem;
   font-weight: bold;
+  margin-bottom: .25em;
+  margin-top: 0;
+  line-height: 1.2;
 }
 
 .img-flex {
-  display:block;
-  width: 100%
+  display: block;
+  width: 100%;
 }
 
-.btn-big {
+.banner {
   position: relative;
   overflow: hidden;
   max-height: 500px;
@@ -29,33 +32,44 @@ h2 {
 
 .banner-content {
   position: absolute;
-  bottom: 50%;
+  top: 50%;
   max-width: 45em;
-  right:50%;
+  left: 50%;
+  padding: 1em;
   width: 100%;
-  transform: translate(50%,50%);
+  transform: translate(-50%,-50%);
 }
 
 .content {
   float: right;
-  width: 50%;
+  width: 66.666%;
+  padding: 0 3em;
 }
 
 .content p {
   font-size: 1.5rem;
+  margin-top: 0;
 }
 
 .image {
   float: left;
-  padding: 2em;
+  width: 33.333%;
 }
 
 .btn {
-  font-size: 1.5rem;
   text-decoration: none;
   border:3px solid #333;
-  padding: .4em .75em .3em;
+  padding:.5em .75em;
   border-radius: 8px;
   color: #fff;
   background-color: #333;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+.btn-big {
+  font-size: 1.5rem;
 }
